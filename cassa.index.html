@@ -1,0 +1,121 @@
+<!-- cassandra_birthday.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday, Cassandra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #0f0f14;
+      --card: #1b1b24;
+      --accent: #ff6fa8;
+      --text: #f7f7fb;
+      --muted: #c9c9d3;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); opacity: 0.9; }
+      50% { transform: translateY(-12px); opacity: 1; }
+      100% { transform: translateY(0); opacity: 0.9; }
+    }
+    body {
+      margin: 0;
+      background: radial-gradient(1200px circle at 30% 10%, #171720, #0c0c12);
+      color: var(--text);
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      display: grid;
+      min-height: 100vh;
+      place-items: center;
+    }
+    .container {
+      max-width: 760px;
+      padding: 28px;
+    }
+    .card {
+      background: linear-gradient(180deg, var(--card), #15151d);
+      border: 1px solid #2a2a38;
+      border-radius: 18px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.03);
+      padding: 36px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hearts {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    .heart {
+      position: absolute;
+      color: var(--accent);
+      font-size: 22px;
+      animation: float 5s ease-in-out infinite;
+      opacity: 0.75;
+    }
+    .heart:nth-child(1) { top: 10%; left: 8%; animation-duration: 6s; }
+    .heart:nth-child(2) { top: 30%; left: 85%; animation-duration: 7s; }
+    .heart:nth-child(3) { top: 75%; left: 12%; animation-duration: 5s; }
+    .heart:nth-child(4) { top: 55%; left: 55%; animation-duration: 6.5s; }
+    .title {
+      font-size: 2.2rem;
+      letter-spacing: 0.4px;
+      margin: 0 0 10px;
+      color: var(--text);
+    }
+    .subtitle {
+      font-size: 1rem;
+      color: var(--muted);
+      margin: 0 0 26px;
+    }
+    .line {
+      margin: 12px 0;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    .signature {
+      margin-top: 26px;
+      color: var(--muted);
+      font-style: italic;
+    }
+    .accent {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 10px 16px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: #1b1b24;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(255, 111, 168, 0.35);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="hearts" aria-hidden="true">
+        <div class="heart">❤</div>
+        <div class="heart">❤</div>
+        <div class="heart">❤</div>
+        <div class="heart">❤</div>
+      </div>
+      <h1 class="title">Happy Birthday, <span class="accent">Cassandra</span> 🎉</h1>
+      <p class="subtitle">A note of appreciation from Odala</p>
+
+      <p class="line">On this special day, I celebrate the amazing person you are.</p>
+      <p class="line">Your smile lights up every room, and your kindness inspires me.</p>
+      <p class="line">You are strong, thoughtful, and full of grace.</p>
+      <p class="line">I'm grateful for every moment we share.</p>
+      <p class="line">May this year bring you joy, success, and love because you truly deserve the best.</p>
+      <p class="line">Today is all about you, and I hope you feel how deeply appreciated you are.</p>
+
+      <p class="signature">With admiration, Odala</p>
+      <a class="btn" href="#" onclick="alert('Happy Birthday, Cassandra! 🎂✨')">Send a birthday wish</a>
+    </div>
+  </div>
+</body>
+</html>
